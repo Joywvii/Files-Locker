@@ -20,7 +20,7 @@ goto End
 :UNLOCK
 echo 输入密码来解锁文件夹
 set/p "pass=>"
-if NOT %pass%== 12456 goto FAIL
+if NOT %pass%== 123456 goto FAIL
 attrib -h -s "HTG Locker"
 ren "HTG Locker" Private
 echo Folder Unlocked successfully
