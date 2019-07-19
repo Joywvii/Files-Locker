@@ -4,7 +4,7 @@ title Folder Private
 if EXIST "HTG Locker" goto UNLOCK
 if NOT EXIST Private goto MDLOCKER
 :CONFIRM
-echo ÄãÈ·¶¨Òª¼ÓÃÜÒþ²ØPrivateÎÄ¼þ¼ÐÂð£¿(Y/N)
+echo ä½ ç¡®å®šè¦åŠ å¯†éšè—Privateæ–‡ä»¶å¤¹å—ï¼Ÿ(Y/N)
 set/p "cho=>"
 if %cho%==Y goto LOCK
 if %cho%==y goto LOCK
@@ -18,9 +18,9 @@ attrib +h +s "HTG Locker"
 echo Folder locked
 goto End
 :UNLOCK
-echo ÊäÈëÃÜÂëÀ´½âËøÎÄ¼þ¼Ð
+echo è¾“å…¥å¯†ç æ¥è§£é”æ–‡ä»¶å¤¹
 set/p "pass=>"
-if NOT %pass%== 19970909 goto FAIL
+if NOT %pass%== 12456 goto FAIL
 attrib -h -s "HTG Locker"
 ren "HTG Locker" Private
 echo Folder Unlocked successfully
